@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form Modal</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <!-- Button to open the modal login form -->
+    <button id="login">Login</button>
+    <article>
+      <span class="close" title="Close Modal">&times;</span>
+      <form class="animate" action="#" method="POST">
+        <section class="imgcontainer">
+          <img src="img_avatar2.png" alt="User Avatar" class="avatar" />
+        </section>
+
+        <section class="container">
+          <label for="uname"><strong>Username</strong></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><strong>Password</strong></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+          <input type="submit" value="Login" />
+        </section>
+        <section class="container">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </section>
+      </form>
+    </article>
+
+    <script src="login.js"></script>
+  </body>
+</html>
