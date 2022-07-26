@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <article id="carousel">
+      <section class="active main fade">
+        <img src="./nature.jpg" alt="First Image" />
+        <p>Caption 1</p>
+        <p class="page_num">1 / 4</p>
+      </section>
+
+      <section class="main fade">
+        <img src="./snow.jpg" alt="First Image" />
+        <p>Caption 2</p>
+        <p class="page_num">2 / 4</p>
+      </section>
+
+      <section class="main fade">
+        <img src="./lights.jpg" alt="First Image" />
+        <p>Caption 3</p>
+        <p class="page_num">3 / 4</p>
+      </section>
+      <section class="main fade">
+        <img src="./mountains.jpg" alt="First Image" />
+        <p>Caption 4</p>
+        <p class="page_num">4 / 4</p>
+      </section>
+
+      <a id="prev" href="#">&#10094;</a>
+      <a id="next" href="#">&#10095;</a>
+    </article>
+
+    <section id="navigation__button">
+      <button
+        type="button"
+        aria-label="First slide"
+        class="active__button"
+      ></button>
+      <button type="button" aria-label="Second slide"></button>
+      <button type="button" aria-label="Third slide"></button>
+      <button type="button" aria-label="Fourth slide"></button>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
