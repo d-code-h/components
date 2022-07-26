@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article>
+      <h1>Form</h1>
+      <form action="#" method="post" novalidate>
+        <label for="name">Name: <span class="important">*</span></label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="John Doe"
+          pattern="^([a-zA-Z]{3,}\s[a-zA-Z]{3,})||([a-zA-Z]{3,}\s[a-zA-Z]{3,}\s[a-zA-Z]{3,})$"
+          required
+        />
+        <span role="alert" class="error"></span>
+        <label for="email">Email: <span class="important">*</span></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="johndoe@gmail.com"
+          required
+        />
+        <span role="alert" class="error"></span>
+
+        <label for="tel">Telephone: <span class="important">*</span></label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="+2348064443872"
+          pattern="^\+234[0-9]{10}$"
+          required
+        />
+        <span role="alert" class="error"></span>
+
+        <select aria-label="state" name="state" id="state">
+          <option disabled selected>State</option>
+          <option value="Kwara">Kwara</option>
+          <option value="Lagos">Lagos</option>
+          <option value="Abuja">Abuja</option>
+          <option value="Kaduna">Kaduna</option>
+          <option value="Niger">Niger</option>
+        </select>
+        <span role="alert" class="error"></span>
+
+        <label for="password">Password: <span class="important">*</span></label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="********"
+          pattern="^(?=.*\d)(?=.*[!@#($%^&)*])(?=.*[a-z])(?=.*[A-Z]).{8,}$"
+          required
+        />
+        <span role="alert" class="error"></span>
+
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
