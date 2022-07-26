@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150%;
+  background-color: rgba(220,220,220,0.5);
+  color: #00203FFF;
+}
+
+article {
+  margin-top: -3em;
+  width: 100%;
+}
+
+h1, input[type="submit"]{
+  font-family: 'Gulzar', serif;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8em;
+}  
+
+label, input {
+  height: 4rem;
+  font-weight: bolder;
+}
+input {
+    border: none;
+  border-radius: 1em;
+  background-color: #ADEFD1FF;
+  color: #00203FFF;
+  padding: 0.4em 0.8em;
+  letter-spacing: 0.1rem;
+}
+
+input[type="submit"] {
+font-size: 1.3rem;
+  text-align: center;
+  margin: auto;
+  width: 6em;
+  height: 3em;
+}

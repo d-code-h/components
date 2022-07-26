@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d3d3d3;
+  height: 100vh;
+  margin: 0;
+  padding: 0.4em;
+
+}
+article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;    
+  align-items: center;
+  border: 1px solid green;
+}
+
+section{
+   height: 6em;
+   font-size: 2em;
+   margin: 0.1em;
+   padding: 1.5em;
+   background-color: #ff0049;
+   padding: 2em;
+}
