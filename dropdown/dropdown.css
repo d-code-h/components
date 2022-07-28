@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+}
+
+section {
+  position: relative;
+}
+
+button {
+  color: #fff;
+  background-color: #f4511e;
+  border: none;
+  padding: 1rem 0.8rem;
+}
+
+ul {
+  margin: 0;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 8rem;
+  padding: 0;
+  display: none;
+  box-shadow: 0.4rem 0.4rem 0.1rem 0.1rem #aaa;
+}
+section:hover ul {
+  display: block;
+}
+li {
+  list-style-type: none;
+  padding: 0.6rem 0.5rem;
+  width: 100%;
+}
+
+li:hover {
+  background-color: #ddd;
+}
+
+li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
