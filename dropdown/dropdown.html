@@ -9,14 +9,39 @@
   </head>
   <body>
     <article>
-      <section>
-        <button>Hover Me</button>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
+      <section id="top_nav">
+        <section>
+          <button>Left Menu</button>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </section>
+        <section id="right">
+          <button>Right Menu</button>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </section>
       </section>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li>
+            <button>Dropdown</button>
+            <ul id="dropdown_menu">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </article>
     <script src="dropdown.js"></script>
   </body>
