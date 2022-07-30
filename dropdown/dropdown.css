@@ -6,6 +6,11 @@ body {
   font-size: 100%;
 }
 
+#top_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 section {
   position: relative;
 }
@@ -25,10 +30,72 @@ ul {
   padding: 0;
   display: none;
   box-shadow: 0.4rem 0.4rem 0.1rem 0.1rem #aaa;
+  z-index: 1;
 }
-section:hover ul {
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  background-color: #333;
+}
+nav ul li {
+  height: auto;
+}
+
+nav button:hover {
+  background-color: red;
+  /* border: 1rem solid yellow; */
+  outline: none;
+  /* outline: none; */
+}
+nav ul {
+  width: 90%;
+  margin-top: 10rem;
+  display: block;
+  box-shadow: none;
+}
+
+nav li {
+  width: auto;
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  font-weight: normal;
+}
+
+nav li a {
+  /* display: ; */
+  color: #fff;
+}
+
+#dropdown_menu {
+  width: 8rem;
+  margin-top: 0.2rem;
+  display: block;
+  background-color: #f1f1f1;
+}
+
+#dropdown_menu li {
+  padding: 0.5rem 0.8rem;
+  display: block;
+  width: 100%;
+}
+
+#dropdown_menu a {
+  color: #000;
+}
+
+#right ul {
+  right: 0;
+}
+
+section:hover ul,
+#right:hover ul {
   display: block;
 }
+
 li {
   list-style-type: none;
   padding: 0.6rem 0.5rem;
